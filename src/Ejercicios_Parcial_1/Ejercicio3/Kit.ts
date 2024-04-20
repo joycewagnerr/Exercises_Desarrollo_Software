@@ -17,5 +17,6 @@ export class Kit implements Elemento {
             precio += elemento.calcular_precio();
         })
         return precio - (precio * 0.1);
+        //return precio * 0.9;
     }
 }

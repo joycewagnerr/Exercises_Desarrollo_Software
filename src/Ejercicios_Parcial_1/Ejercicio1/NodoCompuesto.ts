@@ -17,6 +17,11 @@ export class NodoCompuesto<T> extends Nodo<T>{
         this.hijos.forEach( hijo => {
             cont += hijo.cumplen(p);
         });
+
+        // if ( this.nodo_interno ){
+        //     return this.nodo_interno.cumplen(p) + cont;
+        // }
+        // return cont;
         
         return ( this.nodo_interno ) ? this.nodo_interno.cumplen(p) + cont : cont;
     }

@@ -21,7 +21,8 @@ export class Nodo<T>{
         // if ( p.cumple(this.valor) ){
         //     cont += 1;        
         // }
+        // return cont;
         
-        return (p.cumple(this.valor)) ? (cont += 1) : cont ;
+        return (p.cumple(this.valor)) ? (cont += 1) : cont;
     }
 }

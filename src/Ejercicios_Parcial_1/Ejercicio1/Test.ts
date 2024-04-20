@@ -10,8 +10,8 @@ let predicado: Predicado<number> = {
     }
 };
 
-const nodo1 = new Nodo(1, [new Nodo(2), new Nodo(1), new Nodo(1)]);
-const nodoC = new NodoCompuesto(2, [new Nodo(1), new Nodo(2)], nodo1);
+const nodo1 = new Nodo(1, [new Nodo(2), new Nodo(3)]);
+const nodoC = new NodoCompuesto(1, [new Nodo(2), new Nodo(1)], nodo1);
 
 console.log(nodo1.cumplen(predicado));
 console.log(nodoC.cumplen(predicado)); 

@@ -1,4 +1,4 @@
-export interface Elemento{
+export interface Elemento {
     
     calcular_precio(): number;
 }
