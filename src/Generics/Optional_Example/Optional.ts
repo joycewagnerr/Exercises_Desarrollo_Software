@@ -16,7 +16,6 @@ export class Optional<T>{
 
     hasValue(): boolean {
         return this.assigned;
-        //return !!this.value;
     }
 
     getValue(): T {
