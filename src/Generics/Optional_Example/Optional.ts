@@ -20,13 +20,13 @@ export class Optional<T>{
 
     getValue(): T {
         if ( !this.hasValue()) {
-            throw new Error('Value noy found');
+            throw new Error('Value not found');
         }
         return <T>this.value;
     }
 }
 
-const prueba =  new Optional<number>(undefined);
+const prueba =  new Optional<number>(2);
 console.log(prueba.getValue());
 console.log(prueba.hasValue());
 

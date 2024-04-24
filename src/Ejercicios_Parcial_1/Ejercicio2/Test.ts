@@ -7,7 +7,7 @@ const archivo1: Archivo = new Archivo('foto1');
 const archivo2: Archivo = new Archivo('foto2');
 const archivoNoValido: Archivo = new Archivo('');
 
-documentos.setElement(imagenes);
+documentos.setElement(archivo2);
 documentos.setElement(archivo1);
 imagenes.setElement(archivo2);
 imagenes.setElement(archivoNoValido);
