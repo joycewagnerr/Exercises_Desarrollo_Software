@@ -3,9 +3,9 @@ import { Predicado } from "./Predicado";
 
 export class NodoCompuesto<T> extends Nodo<T>{
 
-    private nodo_interno: Nodo<T>;
+    private nodo_interno: Nodo<T> | undefined;
 
-    constructor(valor: T, hijos: Nodo<T>[], nodo_interno: Nodo<T>){
+    constructor(valor: T, hijos: Nodo<T>[], nodo_interno: Nodo<T> | undefined){
         super(valor, hijos),
         this.nodo_interno = nodo_interno
     }
